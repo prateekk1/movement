@@ -1,0 +1,7 @@
+<% current_user.movements.each do |details| %>
+    <div>
+        <ul>
+          <li><b><%= details.user.email%></b> is Moving From <b><%= details.moving_from%></b> To <b><%= details.moving_to %></b> On <b><%= details.end_date %></b><%=link_to 'Things to sell', sellable_products_path(:movement_id => details.id ) %></li>
+        </ul>
+      </div>
+<% end %>

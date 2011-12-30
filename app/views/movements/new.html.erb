@@ -1,0 +1,12 @@
+  <div align="center" style=bgcolor:red>
+    <h3>Create Yours movement</h3>
+    <% form_tag movements_path do %>
+      <table>
+        <tr><td>Moving From:</td><td align="left"><input type="text" name="moving_from"></td></tr>
+        <tr><td>Moving To:</td><td align="left"><input type="text" name="moving_to"></td></tr>
+        <tr><td>End Date:</td><td align="left"><input type="text" name="moving_date"></td></tr>
+      </table>
+      <%= button_to 'Create'%>
+    <%end%>
+  </div>
+  <a href="/">Click here to go HomePage</a>

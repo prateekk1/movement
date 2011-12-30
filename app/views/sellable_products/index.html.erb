@@ -1,0 +1,9 @@
+  <div align="center">
+    <h2>Welcome to Thing to Sell Page</h2>
+      <h4><%= link_to 'Create New', new_sellable_product_path(:movement_id => @movement.id) %></h4>
+      <% @new_products.each do |product| %>
+        <ul>
+          <li><b>Product Name:</b> <%=product.name%> <b>Description:</b> <%=product.description%> <b>Quantity:</b> <%=product.quantity%> <b>Desired Price:</b> <%=product.desired_price%> Rs. <%= image_tag product.avatar.url(:medium) %></li>
+        </ul>
+      <% end %>
+  </div>

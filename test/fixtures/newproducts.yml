@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  quantity: 1
+  desired_price: 1.5
+  user_id: MyString
+  movement_id: MyString
+
+two:
+  name: MyString
+  description: MyText
+  quantity: 1
+  desired_price: 1.5
+  user_id: MyString
+  movement_id: MyString
